@@ -18,3 +18,16 @@ var sum = function(arr) {
 
 console.log(sum([1, 2, 3, 4, 5, 6])); //21
 console.log(sum([1,2,3])); //6
+
+
+var sum2 = function(arr) {
+
+	if (arr.length === 1) {
+		return arr[0];
+	}
+
+	return arr.pop() + sum(arr);
+}
+
+console.log(sum([1, 2, 3, 4, 5, 6])); //21
+console.log(sum([1,2,3])); //6
